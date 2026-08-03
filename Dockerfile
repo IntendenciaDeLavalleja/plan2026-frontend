@@ -2,6 +2,10 @@ FROM node:22.14-alpine AS build
 
 WORKDIR /app
 
+# Vite consumes this value at build time and embeds it in the generated bundle.
+ARG VITE_API_BASE_URL=https://mapi.sgdm.lavalleja.uy
+ENV VITE_API_BASE_URL=${VITE_API_BASE_URL}
+
 COPY package.json package-lock.json ./
 RUN npm ci --legacy-peer-deps
 
