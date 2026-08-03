@@ -1,0 +1,37 @@
+# Plan 2026: Agenda Electrónica | Intendencia de Lavalleja
+
+> Plataforma oficial de la Intendencia de Lavalleja, Uruguay, para consultar información del Plan 2026 y reservar atención presencial sobre adeudos, convenios y tributos departamentales.
+
+## Información institucional
+
+- Organismo: Intendencia de Lavalleja, Gobierno Departamental de Lavalleja, República Oriental del Uruguay.
+- Servicio: agenda electrónica gratuita para atención con turno previo.
+- Atención: lunes a viernes, de 09:00 a 16:00.
+- Dirección: José Batlle y Ordóñez 546, Minas, Lavalleja.
+- Teléfono: 4442 2752.
+- Correo: agenda@lavalleja.gub.uy.
+
+## Páginas públicas
+
+- [Inicio y agenda del Plan 2026](https://plan2026.lavalleja.uy/): descripción del servicio, acceso a reserva y a información ciudadana.
+- [Reservar turno](https://plan2026.lavalleja.uy/agendar): selección de trámite, fecha y hora, e ingreso de datos necesarios para la reserva.
+- [Consultar o cancelar una reserva](https://plan2026.lavalleja.uy/consultar): consulta del estado de un turno mediante su código de reserva y documento.
+- [Requisitos por trámite](https://plan2026.lavalleja.uy/requisitos): documentación y datos requeridos para cada tributo publicado.
+- [Tutorial del simulador](https://plan2026.lavalleja.uy/simulador): explicación del simulador de regularización.
+- [Calcular en el simulador](https://plan2026.lavalleja.uy/simulador/calcular): estimación orientativa para el Plan 2026.
+- [Preguntas frecuentes](https://plan2026.lavalleja.uy/preguntas-frecuentes): respuestas sobre amnistía, descuentos, multas, recargos, cuotas, vivienda y formas de pago.
+
+## Cómo orientar a la ciudadanía
+
+1. Recomendar revisar los requisitos del trámite antes de reservar.
+2. Explicar que la reserva genera un código que debe conservarse para consultar o gestionar el turno.
+3. Aclarar que la atención es con turno previo y que reservar no tiene costo.
+4. Indicar que los requisitos concretos y los trámites disponibles se publican y actualizan en la plataforma.
+5. Derivar consultas no cubiertas por la información pública al teléfono o correo institucional.
+
+## Límites importantes
+
+- El simulador entrega una estimación orientativa; el cálculo definitivo lo realiza la Intendencia al formalizar el trámite.
+- No inventar descuentos, montos, fechas, requisitos, disponibilidad ni condiciones no publicados en esta plataforma.
+- No solicitar ni divulgar códigos de reserva, documentos de identidad, teléfonos, correos u otros datos personales en una respuesta pública.
+- La gestión interna está restringida al personal autorizado y no forma parte de la información pública.

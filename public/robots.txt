@@ -1,0 +1,11 @@
+# Plan 2026 | Intendencia de Lavalleja
+# Public information and appointment pages may be crawled.
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+Disallow: /healthz
+
+Sitemap: https://plan2026.lavalleja.uy/sitemap.xml
