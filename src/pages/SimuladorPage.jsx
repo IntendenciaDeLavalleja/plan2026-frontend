@@ -10,6 +10,7 @@ import {
 } from '@fluentui/react-components';
 import {
   ArrowLeft24Regular,
+  ArrowDownload24Regular,
   Calculator24Regular,
   Info24Regular,
   Open24Regular,
@@ -30,6 +31,7 @@ import {
   sumDiscountableConcepts,
   sumOriginalDebt,
 } from '../lib/amnistiaCalculator.js';
+import calculatorFileUrl from '../../data/Calculadora Amnistia Lavalleja 2026.xlsx?url';
 
 const EMPTY_VALUES = Object.freeze({
   principalDebt: '',
@@ -243,6 +245,15 @@ export function SimuladorPage() {
                 iconPosition="after"
               >
                 Consultar Deuda Acá
+              </Button>
+              <Button
+                as="a"
+                appearance="secondary"
+                href={calculatorFileUrl}
+                download="Calculadora Amnistia Lavalleja 2026.xlsx"
+                icon={<ArrowDownload24Regular />}
+              >
+                Descargar calculadora Excel
               </Button>
               <Link to="/simulador" style={{ textDecoration: 'none' }}>
                 <Button appearance="transparent" icon={<Info24Regular />}>Ver cómo funciona el simulador</Button>
