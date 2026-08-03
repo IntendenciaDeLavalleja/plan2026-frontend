@@ -1,4 +1,4 @@
-import { getOk } from './apiClient';
+import { getPublicOk } from './apiClient';
 import type {
   AppointmentPublic,
   AvailableDate,
@@ -8,10 +8,10 @@ import type {
 } from '@/types/api';
 
 export const publicApi = {
-  tributeTypes: () => getOk<TributeType[]>({ url: '/public/tribute-types' }),
-  locations: () => getOk<LocationOffice[]>({ url: '/public/locations' }),
+  tributeTypes: () => getPublicOk<TributeType[]>({ url: '/public/tribute-types' }),
+  locations: () => getPublicOk<LocationOffice[]>({ url: '/public/locations' }),
   availability: (tributeTypeId: number, days = 30) =>
-    getOk<{
+    getPublicOk<{
       tribute_type_id: number;
       from: string;
       to: string;
@@ -21,7 +21,7 @@ export const publicApi = {
       params: { tribute_type_id: tributeTypeId, days },
     }),
   slots: (tributeTypeId: number, date: string) =>
-    getOk<{
+    getPublicOk<{
       date: string;
       tribute_type_id: number;
       is_blocked: boolean;
@@ -32,13 +32,13 @@ export const publicApi = {
       params: { tribute_type_id: tributeTypeId, date },
     }),
   createAppointment: (payload: Record<string, unknown>) =>
-    getOk<AppointmentPublic>({ url: '/public/appointments', method: 'POST', data: payload }),
+    getPublicOk<AppointmentPublic>({ url: '/public/appointments', method: 'POST', data: payload }),
   lookupAppointment: (code: string) =>
-    getOk<AppointmentPublic>({
+    getPublicOk<AppointmentPublic>({
       url: `/public/appointments/${encodeURIComponent(code)}`,
     }),
   cancelAppointment: (code: string, document: string) =>
-    getOk<{ cancelled: boolean; reservation_code: string }>({
+    getPublicOk<{ cancelled: boolean; reservation_code: string }>({
       url: `/public/appointments/${encodeURIComponent(code)}/cancel`,
       method: 'POST',
       data: { document },

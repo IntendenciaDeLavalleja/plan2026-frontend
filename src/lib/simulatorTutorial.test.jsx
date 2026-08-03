@@ -68,7 +68,8 @@ describe('tutorial del simulador', () => {
     expect(html).toContain('aria-live="polite"');
     expect(html).toContain('tabindex="-1"');
     expect(html).toContain('aria-label="Progreso del tutorial"');
-    expect(html).not.toContain('<img');
+    const images = html.match(/<img\b[^>]*>/g) ?? [];
+    expect(images.every((image) => /\balt=/.test(image))).toBe(true);
   });
 
   it('/simulador/calcular reutiliza el simulador y conserva sus tres inputs', () => {

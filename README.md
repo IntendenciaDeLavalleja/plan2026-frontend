@@ -25,20 +25,21 @@ npm run lint                      # ESLint
 
 ## Variables de entorno
 
-Crear un archivo `.env` (opcional) en la raíz de `frontend/`:
+Crear un archivo `.env` en la raíz de `frontend/`:
 
 ```
-VITE_API_BASE_URL=http://localhost:5000/api
+VITE_API_URL=https://mapi.sgdm.lavalleja.uy/api/v1
 ```
 
-Si no se define, el cliente usa `/api` por defecto y Vite lo redirige al
-backend (ver `vite.config.ts`).
+La variable es obligatoria, se incorpora al bundle durante `npm run build` y
+debe contener una URL absoluta. Para cambiar de backend, actualizar sólo
+`VITE_API_URL` y reconstruir la aplicación.
 
-## Proxy de desarrollo
+## Comunicación con la API
 
-Vite redirige `/api/*` a `http://localhost:5000` para evitar problemas de
-CORS en desarrollo. En producción, configurar el servidor web (Nginx,
-Apache, etc.) para hacer lo mismo o servir la API bajo el mismo dominio.
+El navegador llama directamente al backend configurado. El backend debe
+autorizar el origen del frontend mediante `CORS_ALLOWED_ORIGINS`; Nginx sólo
+sirve la SPA y no actúa como proxy de API.
 
 ## Estructura
 

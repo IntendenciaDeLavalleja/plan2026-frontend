@@ -7,7 +7,7 @@ export function RequireAdmin({ children }: { children: ReactNode }) {
   const { user, loading } = useAuth();
   if (loading) return <LoadingState fullscreen label="Verificando sesión…" />;
   if (!user) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/admin/login" replace />;
   }
   return <>{children}</>;
 }
